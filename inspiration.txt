@@ -1,0 +1,12 @@
+https://www.cgtrader.com/3d-models/architectural/decoration/chevalier-puppet-theatre-houses-of-the-world
+https://www.cgtrader.com/3d-models/architectural/decoration/circus-puppet-theatre-houses-of-the-world
+https://www.turbosquid.com/3d-models/max-old-puppet/666473
+
+convert:
+http://www.greentoken.de/onlineconv/
+
+voxelizer:
+http://www.minddesk.com/features.php
+
+animation workflow:
+https://github.com/arturitu/threejs-animation-workflow

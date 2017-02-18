@@ -1,0 +1,74 @@
+# File produced by Open Asset Import Library (http://www.assimp.sf.net)
+# (assimp v3.1.187496374)
+
+newmtl Base
+Kd 0.396078 0.396078 0.396078
+Ka 0 0 0
+Ks 0 0 0
+Ke 0 0 0
+d 1
+Ns 76
+illum 2
+
+newmtl Puppet_Cloth
+Kd 0.0509804 0.0509804 0.0509804
+Ka 0 0 0
+Ks 0.25098 0.25098 0.25098
+Ke 0 0 0
+d 1
+Ns 78
+illum 2
+
+newmtl wood_168
+Kd 0.498039 0.498039 0.498039
+Ka 0 0 0
+Ks 0.341176 0.341176 0.341176
+Ke 0 0 0
+d 1
+Ns 80
+illum 2
+
+newmtl Puppet_Cloth2
+Kd 0.309804 0.0509804 0.0509804
+Ka 0 0 0
+Ks 0.321569 0.321569 0.321569
+Ke 0 0 0
+d 1
+Ns 78
+illum 2
+
+newmtl Frame
+Kd 0.337255 0.133333 0.0509804
+Ka 0 0 0
+Ks 0.286275 0.145098 0.0196078
+Ke 0 0 0
+d 1
+Ns 68
+illum 2
+
+newmtl Poster
+Kd 0.498039 0.498039 0.498039
+Ka 0 0 0
+Ks 0.0705882 0.0705882 0.0705882
+Ke 0 0 0
+d 1
+Ns 67
+illum 2
+
+newmtl LightBody
+Kd 0.0666667 0.0705882 0.0941176
+Ka 0 0 0
+Ks 0.203922 0.203922 0.203922
+Ke 0 0 0
+d 1
+Ns 70
+illum 2
+
+newmtl Light
+Kd 0 0 0
+Ka 0 0 0
+Ks 0 0 0
+Ke 0 0 0
+d 1
+illum 1
+
