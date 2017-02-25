@@ -50,15 +50,27 @@
 
       </a-entity>
 
-      <!-- <a-entity oculus-touch-controls="hand: left" vive-controls="hand: left"> -->
-
-
-
-
-      </a-entity>
-      <a-entity hand-controls="hand: right"></a-entity>
-
       <script type="text/javascript">
+      AFRAME.registerComponent('mouth', {
+        schema: {
+          controllerID: {type: 'string', default: 'right'}
+        },
+        init: function () {
+          var el = this.el;
+          // add listener controller.element.addlistener("axismove")
+          var controllerEl = document.getElementById(this.data.controllerID);
+          controllerEl.addEventListener('buttonchanged', this.onTriggerChanged.bind(this));
+        },
+        onTriggerChanged: function (evt) {
+          if (evt.detail.id !== 1) { return; }           // Not Trigger
+          var value = evt.detail.state.value;
+          var maxRotation = 30;
+          var mouthEl = this.el;
+          mouthEl.setAttribute("rotation", (value * maxRotation) + " 0 0");
+          console.log(value);
+        },
+      });
+
         var enteredVR = false;
 
         document.querySelector('a-scene').addEventListener('enter-vr', function () {
