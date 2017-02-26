@@ -16,16 +16,13 @@
     <!-- <a-scene avatar-recorder> -->
     <a-scene id="myscene" remove-spinner avatar-recorder="spectatorPlay: true; spectatorPosition: 0 0 0">
       <a-assets>
-        <a-asset-item id="theaterPly" src="assets/puppet2.bake.ply"></a-asset-item>
+        <a-asset-item id="theater-obj" src="assets/puppet2.bake.ply"></a-asset-item>
         <img id="skyTexture" src="https://cdn.aframe.io/a-painter/images/sky.jpg">
-        <a-asset-item id="hamiltonObj" src="assets/obj/hamilton-base.obj"></a-asset-item>
-        <a-asset-item id="hamiltonMtl" src="assets/obj/hamilton-base.mtl"></a-asset-item>
-        <a-asset-item id="hamiltonHeadObj" src="assets/obj/hamilton-head-cropped.obj"></a-asset-item>
-        <a-asset-item id="hamiltonHeadMtl" src="assets/obj/hamilton-head-cropped.mtl"></a-asset-item>
       </a-assets>
 
       <!-- Primitives. -->
-      <a-entity id="theater" ply-model="src: #theaterPly" scale="0.01 0.01 0.01" position="0 0 -1.25" rotation="-90 90 90" ></a-entity>
+      <!-- <a-entity id="theater" ply-model="src: #theater-obj" scale="0.01 0.01 0.01" position="0 0 -1.25" rotation="-90 90 90" ></a-entity> -->
+      <a-entity id="theater" ply-model="src: #theater-obj" scale="0.01 0.01 0.01" position="0 0 -1.25" rotation="-90 90 90" ></a-entity>
       <!-- <a-entity id="theater" ply-model="src: url(assets/puppet2.bake.ply)" scale="0.01 0.01 0.01" position="0 0 -1.25" rotation="-90 90 90" ></a-entity> -->
 
       <a-entity id="cameraWrapper" position="0 0 0" >
@@ -43,34 +40,34 @@
       <a-entity id="left" hand-controls="left"></a-entity>
       <a-entity id="right" hand-controls="right">
 
-        <!-- <a-entity id="rightItem" file="chr_suit1" objectGroup="mmmm_chr" objectId="0" obj-model="obj: url(assets/obj/chr_suit1.obj); mtl: url(assets/obj/chr_suit1.mtl)" rotation="-56.8 0 0" scale="0.01 0.01 0.01" position="0 -0.08 -0.09"></a-entity> -->
-        <a-entity id="rightItem" file="hamilton-base" objectGroup="sunlessfiend_hamilton" objectId="0" obj-model="obj: #hamiltonObj; mtl: #hamiltonMtl" rotation="-56.8 0 0" scale="0.002 0.002 0.002" position="0 -0.08 -0.09">
-          <a-entity id="head" file="hamilton-head-cropped" mouth="controllerID: right" objectGroup="sunlessfiend_hamilton" objectId="0" obj-model="obj: #hamiltonHeadObj; mtl: #hamiltonHeadMtl" rotation="0 0 0" position="0 61 5"></a-entity>
+        <a-entity id="rightItem" file="chr_suit1" objectGroup="mmmm_chr" objectId="0" obj-model="obj: url(assets/obj/chr_suit1.obj); mtl: url(assets/obj/chr_suit1.mtl)" rotation="-56.8 0 0" scale="0.01 0.01 0.01" position="0 -0.08 -0.09"></a-entity>
+
+        <a-entity select-bar="controllerID: right" id="menuObjects" scale="0.7 0.7 0.7" position="0 0.05 0.08" rotation="-85 0 0">
+
+          <optgroup label="Characters" value="mmmm_chr">
+            <option value="chr_suit1" src="assets/preview/chr_suit1.jpg" selected>Suit 1</option>
+            <option value="chr_suit3" src="assets/preview/chr_suit3.jpg">Suit 3</option>
+            <option value="chr_robot" src="assets/preview/chr_robot.jpg">Robot</option>
+            <option value="chr_costume3" src="assets/preview/chr_costume3.jpg">Costume 3</option>
+            <option value="chr_super2" src="assets/preview/chr_super2.jpg">Super 2</option>
+            <option value="chr_bro" src="assets/preview/chr_bro.jpg">Bro</option>
+            <option value="chr_lady1" src="assets/preview/chr_lady1.jpg">Lady 1</option>
+            <option value="null" src="assets/icon_null.png"></option>
+          </optgroup>
+
         </a-entity>
 
       </a-entity>
 
-      <script type="text/javascript">
-      AFRAME.registerComponent('mouth', {
-        schema: {
-          controllerID: {type: 'string', default: 'right'}
-        },
-        init: function () {
-          var el = this.el;
-          // add listener controller.element.addlistener("axismove")
-          var controllerEl = document.getElementById(this.data.controllerID);
-          controllerEl.addEventListener('buttonchanged', this.onTriggerChanged.bind(this));
-        },
-        onTriggerChanged: function (evt) {
-          if (evt.detail.id !== 1) { return; }           // Not Trigger
-          var value = evt.detail.state.value;
-          var maxRotation = 30;
-          var mouthEl = this.el;
-          mouthEl.setAttribute("rotation", (value * maxRotation) + " 0 0");
-          console.log(value);
-        },
-      });
+      <!-- <a-entity oculus-touch-controls="hand: left" vive-controls="hand: left"> -->
 
+
+
+
+      </a-entity>
+      <a-entity hand-controls="hand: right"></a-entity>
+
+      <script type="text/javascript">
         var enteredVR = false;
 
         document.querySelector('a-scene').addEventListener('enter-vr', function () {
