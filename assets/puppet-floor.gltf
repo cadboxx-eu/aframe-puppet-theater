@@ -1,0 +1,304 @@
+{
+    "accessors": {
+        "accessor_38": {
+            "bufferView": "bufferView_49",
+            "byteOffset": 0,
+            "byteStride": 0,
+            "componentType": 5123,
+            "count": 30,
+            "type": "SCALAR"
+        },
+        "accessor_41": {
+            "bufferView": "bufferView_49",
+            "byteOffset": 60,
+            "byteStride": 0,
+            "componentType": 5123,
+            "count": 6,
+            "type": "SCALAR"
+        },
+        "accessor_43": {
+            "bufferView": "bufferView_50",
+            "byteOffset": 0,
+            "byteStride": 12,
+            "componentType": 5126,
+            "count": 36,
+            "max": [
+                33.4576,
+                94.1681,
+                24.0704
+            ],
+            "min": [
+                -33.7333,
+                93.6681,
+                -25.2225
+            ],
+            "type": "VEC3"
+        },
+        "accessor_45": {
+            "bufferView": "bufferView_50",
+            "byteOffset": 432,
+            "byteStride": 12,
+            "componentType": 5126,
+            "count": 36,
+            "max": [
+                1,
+                1,
+                1
+            ],
+            "min": [
+                -1,
+                -1,
+                -1
+            ],
+            "type": "VEC3"
+        },
+        "accessor_47": {
+            "bufferView": "bufferView_50",
+            "byteOffset": 864,
+            "byteStride": 8,
+            "componentType": 5126,
+            "count": 36,
+            "max": [
+                34.0954,
+                25.1464
+            ],
+            "min": [
+                -33.0954,
+                -24.1464
+            ],
+            "type": "VEC2"
+        }
+    },
+    "animations": {},
+    "asset": {
+        "generator": "collada2gltf@cf6371beb0bdc18ba603378d5e40c966da53d385",
+        "premultipliedAlpha": true,
+        "profile": {
+            "api": "WebGL",
+            "version": "1.0.2"
+        },
+        "version": "1.0"
+    },
+    "bufferViews": {
+        "bufferView_49": {
+            "buffer": "puppet-floor",
+            "byteLength": 72,
+            "byteOffset": 0,
+            "target": 34963
+        },
+        "bufferView_50": {
+            "buffer": "puppet-floor",
+            "byteLength": 1152,
+            "byteOffset": 72,
+            "target": 34962
+        }
+    },
+    "buffers": {
+        "puppet-floor": {
+            "byteLength": 1224,
+            "type": "arraybuffer",
+            "uri": "puppet-floor.bin"
+        }
+    },
+    "cameras": {
+        "Camera-camera": {
+            "name": "Camera",
+            "perspective": {
+                "aspect_ratio": 1.77778,
+                "yfov": 0.482375,
+                "zfar": 100,
+                "znear": 0.1
+            },
+            "type": "perspective"
+        }
+    },
+    "materials": {
+        "Base-effect": {
+            "extensions": {
+                "KHR_materials_common": {
+                    "doubleSided": false,
+                    "jointCount": 0,
+                    "technique": "PHONG",
+                    "transparent": false,
+                    "values": {
+                        "ambient": [
+                            0,
+                            0,
+                            0,
+                            1
+                        ],
+                        "diffuse": [
+                            0.396078,
+                            0.396078,
+                            0.396078,
+                            1
+                        ],
+                        "emission": [
+                            0,
+                            0,
+                            0,
+                            1
+                        ],
+                        "shininess": 39,
+                        "specular": [
+                            0,
+                            0,
+                            0,
+                            1
+                        ]
+                    }
+                }
+            },
+            "name": "Base"
+        },
+        "Frame-effect": {
+            "extensions": {
+                "KHR_materials_common": {
+                    "doubleSided": false,
+                    "jointCount": 0,
+                    "technique": "PHONG",
+                    "transparent": false,
+                    "values": {
+                        "ambient": [
+                            0,
+                            0,
+                            0,
+                            1
+                        ],
+                        "diffuse": [
+                            0.337255,
+                            0.133333,
+                            0.0509804,
+                            1
+                        ],
+                        "emission": [
+                            0,
+                            0,
+                            0,
+                            1
+                        ],
+                        "shininess": 35,
+                        "specular": [
+                            0.286275,
+                            0.145098,
+                            0.0196078,
+                            1
+                        ]
+                    }
+                }
+            },
+            "name": "Frame"
+        }
+    },
+    "meshes": {
+        "OldPuppet7_7-mesh": {
+            "name": "OldPuppet7_7",
+            "primitives": [
+                {
+                    "attributes": {
+                        "NORMAL": "accessor_45",
+                        "POSITION": "accessor_43",
+                        "TEXCOORD_0": "accessor_47"
+                    },
+                    "indices": "accessor_38",
+                    "material": "Base-effect",
+                    "mode": 4
+                },
+                {
+                    "attributes": {
+                        "NORMAL": "accessor_45",
+                        "POSITION": "accessor_43",
+                        "TEXCOORD_0": "accessor_47"
+                    },
+                    "indices": "accessor_41",
+                    "material": "Frame-effect",
+                    "mode": 4
+                }
+            ]
+        }
+    },
+    "nodes": {
+        "Camera": {
+            "camera": "Camera-camera",
+            "children": [],
+            "matrix": [
+                0.685921,
+                0.727676,
+                0,
+                0,
+                -0.324014,
+                0.305421,
+                0.895396,
+                0,
+                0.651558,
+                -0.61417,
+                0.445271,
+                0,
+                7.48113,
+                -6.50764,
+                5.34367,
+                1
+            ],
+            "name": "Camera"
+        },
+        "OldPuppet7_7": {
+            "children": [],
+            "matrix": [
+                0.1,
+                0,
+                0,
+                0,
+                0,
+                -1.62921e-008,
+                0.1,
+                0,
+                0,
+                -0.1,
+                -1.62921e-008,
+                0,
+                0.0247512,
+                -0.347046,
+                -9.33064,
+                1
+            ],
+            "meshes": [
+                "OldPuppet7_7-mesh"
+            ],
+            "name": "OldPuppet7_7"
+        },
+        "node_3": {
+            "children": [
+                "Camera",
+                "OldPuppet7_7"
+            ],
+            "matrix": [
+                1,
+                0,
+                0,
+                0,
+                0,
+                0,
+                -1,
+                0,
+                0,
+                1,
+                0,
+                0,
+                0,
+                0,
+                0,
+                1
+            ],
+            "name": "Y_UP_Transform"
+        }
+    },
+    "scene": "defaultScene",
+    "scenes": {
+        "defaultScene": {
+            "nodes": [
+                "node_3"
+            ]
+        }
+    },
+    "skins": {}
+}

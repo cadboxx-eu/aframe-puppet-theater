@@ -1,0 +1,360 @@
+{
+    "accessors": {
+        "accessor_55": {
+            "bufferView": "bufferView_69",
+            "byteOffset": 0,
+            "byteStride": 0,
+            "componentType": 5123,
+            "count": 10020,
+            "type": "SCALAR"
+        },
+        "accessor_58": {
+            "bufferView": "bufferView_69",
+            "byteOffset": 20040,
+            "byteStride": 0,
+            "componentType": 5123,
+            "count": 4812,
+            "type": "SCALAR"
+        },
+        "accessor_61": {
+            "bufferView": "bufferView_69",
+            "byteOffset": 29664,
+            "byteStride": 0,
+            "componentType": 5123,
+            "count": 480,
+            "type": "SCALAR"
+        },
+        "accessor_63": {
+            "bufferView": "bufferView_70",
+            "byteOffset": 0,
+            "byteStride": 12,
+            "componentType": 5126,
+            "count": 15312,
+            "max": [
+                34.3225,
+                158.971,
+                24.9268
+            ],
+            "min": [
+                -34.0076,
+                94.0815,
+                -16.3022
+            ],
+            "type": "VEC3"
+        },
+        "accessor_65": {
+            "bufferView": "bufferView_70",
+            "byteOffset": 183744,
+            "byteStride": 12,
+            "componentType": 5126,
+            "count": 15312,
+            "max": [
+                1,
+                1,
+                1
+            ],
+            "min": [
+                -1,
+                -1,
+                -1
+            ],
+            "type": "VEC3"
+        },
+        "accessor_67": {
+            "bufferView": "bufferView_70",
+            "byteOffset": 367488,
+            "byteStride": 8,
+            "componentType": 5126,
+            "count": 15312,
+            "max": [
+                35.8951,
+                2.77586
+            ],
+            "min": [
+                -35.7326,
+                -0.59586
+            ],
+            "type": "VEC2"
+        }
+    },
+    "animations": {},
+    "asset": {
+        "generator": "collada2gltf@cf6371beb0bdc18ba603378d5e40c966da53d385",
+        "premultipliedAlpha": true,
+        "profile": {
+            "api": "WebGL",
+            "version": "1.0.2"
+        },
+        "version": "1.0"
+    },
+    "bufferViews": {
+        "bufferView_69": {
+            "buffer": "puppet-lights",
+            "byteLength": 30624,
+            "byteOffset": 0,
+            "target": 34963
+        },
+        "bufferView_70": {
+            "buffer": "puppet-lights",
+            "byteLength": 489984,
+            "byteOffset": 30624,
+            "target": 34962
+        }
+    },
+    "buffers": {
+        "puppet-lights": {
+            "byteLength": 520608,
+            "type": "arraybuffer",
+            "uri": "puppet-lights.bin"
+        }
+    },
+    "cameras": {
+        "Camera-camera": {
+            "name": "Camera",
+            "perspective": {
+                "aspect_ratio": 1.77778,
+                "yfov": 0.482375,
+                "zfar": 100,
+                "znear": 0.1
+            },
+            "type": "perspective"
+        }
+    },
+    "materials": {
+        "Light-effect": {
+            "extensions": {
+                "KHR_materials_common": {
+                    "doubleSided": false,
+                    "jointCount": 0,
+                    "technique": "PHONG",
+                    "transparent": false,
+                    "values": {
+                        "ambient": [
+                            0,
+                            0,
+                            0,
+                            1
+                        ],
+                        "diffuse": [
+                            0,
+                            0,
+                            0,
+                            1
+                        ],
+                        "emission": [
+                            0,
+                            0,
+                            0,
+                            1
+                        ],
+                        "shininess": 50,
+                        "specular": [
+                            0,
+                            0,
+                            0,
+                            1
+                        ]
+                    }
+                }
+            },
+            "name": "Light"
+        },
+        "LightBody-effect": {
+            "extensions": {
+                "KHR_materials_common": {
+                    "doubleSided": false,
+                    "jointCount": 0,
+                    "technique": "PHONG",
+                    "transparent": false,
+                    "values": {
+                        "ambient": [
+                            0,
+                            0,
+                            0,
+                            1
+                        ],
+                        "diffuse": [
+                            0.0666667,
+                            0.0705882,
+                            0.0941176,
+                            1
+                        ],
+                        "emission": [
+                            0,
+                            0,
+                            0,
+                            1
+                        ],
+                        "shininess": 36,
+                        "specular": [
+                            0.203922,
+                            0.203922,
+                            0.203922,
+                            1
+                        ]
+                    }
+                }
+            },
+            "name": "LightBody"
+        },
+        "Puppet_Cloth-effect": {
+            "extensions": {
+                "KHR_materials_common": {
+                    "doubleSided": false,
+                    "jointCount": 0,
+                    "technique": "PHONG",
+                    "transparent": false,
+                    "values": {
+                        "ambient": [
+                            0,
+                            0,
+                            0,
+                            1
+                        ],
+                        "diffuse": [
+                            0.0509804,
+                            0.0509804,
+                            0.0509804,
+                            1
+                        ],
+                        "emission": [
+                            0,
+                            0,
+                            0,
+                            1
+                        ],
+                        "shininess": 40,
+                        "specular": [
+                            0.25098,
+                            0.25098,
+                            0.25098,
+                            1
+                        ]
+                    }
+                }
+            },
+            "name": "Puppet_Cloth"
+        }
+    },
+    "meshes": {
+        "OldPuppet8_8-mesh": {
+            "name": "OldPuppet8_8",
+            "primitives": [
+                {
+                    "attributes": {
+                        "NORMAL": "accessor_65",
+                        "POSITION": "accessor_63",
+                        "TEXCOORD_0": "accessor_67"
+                    },
+                    "indices": "accessor_55",
+                    "material": "LightBody-effect",
+                    "mode": 4
+                },
+                {
+                    "attributes": {
+                        "NORMAL": "accessor_65",
+                        "POSITION": "accessor_63",
+                        "TEXCOORD_0": "accessor_67"
+                    },
+                    "indices": "accessor_58",
+                    "material": "Puppet_Cloth-effect",
+                    "mode": 4
+                },
+                {
+                    "attributes": {
+                        "NORMAL": "accessor_65",
+                        "POSITION": "accessor_63",
+                        "TEXCOORD_0": "accessor_67"
+                    },
+                    "indices": "accessor_61",
+                    "material": "Light-effect",
+                    "mode": 4
+                }
+            ]
+        }
+    },
+    "nodes": {
+        "Camera": {
+            "camera": "Camera-camera",
+            "children": [],
+            "matrix": [
+                0.685921,
+                0.727676,
+                0,
+                0,
+                -0.324014,
+                0.305421,
+                0.895396,
+                0,
+                0.651558,
+                -0.61417,
+                0.445271,
+                0,
+                7.48113,
+                -6.50764,
+                5.34367,
+                1
+            ],
+            "name": "Camera"
+        },
+        "OldPuppet8_8": {
+            "children": [],
+            "matrix": [
+                0.1,
+                0,
+                0,
+                0,
+                0,
+                -1.62921e-008,
+                0.1,
+                0,
+                0,
+                -0.1,
+                -1.62921e-008,
+                0,
+                0.0247512,
+                -0.347046,
+                -9.33064,
+                1
+            ],
+            "meshes": [
+                "OldPuppet8_8-mesh"
+            ],
+            "name": "OldPuppet8_8"
+        },
+        "node_3": {
+            "children": [
+                "Camera",
+                "OldPuppet8_8"
+            ],
+            "matrix": [
+                1,
+                0,
+                0,
+                0,
+                0,
+                0,
+                -1,
+                0,
+                0,
+                1,
+                0,
+                0,
+                0,
+                0,
+                0,
+                1
+            ],
+            "name": "Y_UP_Transform"
+        }
+    },
+    "scene": "defaultScene",
+    "scenes": {
+        "defaultScene": {
+            "nodes": [
+                "node_3"
+            ]
+        }
+    },
+    "skins": {}
+}

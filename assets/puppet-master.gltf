@@ -1,0 +1,947 @@
+{
+    "accessors": {
+        "accessor_102": {
+            "bufferView": "bufferView_197",
+            "byteOffset": 167922,
+            "byteStride": 0,
+            "componentType": 5123,
+            "count": 10020,
+            "type": "SCALAR"
+        },
+        "accessor_105": {
+            "bufferView": "bufferView_197",
+            "byteOffset": 187962,
+            "byteStride": 0,
+            "componentType": 5123,
+            "count": 4812,
+            "type": "SCALAR"
+        },
+        "accessor_108": {
+            "bufferView": "bufferView_197",
+            "byteOffset": 197586,
+            "byteStride": 0,
+            "componentType": 5123,
+            "count": 480,
+            "type": "SCALAR"
+        },
+        "accessor_110": {
+            "bufferView": "bufferView_198",
+            "byteOffset": 2686752,
+            "byteStride": 12,
+            "componentType": 5126,
+            "count": 15312,
+            "max": [
+                34.3225,
+                158.971,
+                24.9268
+            ],
+            "min": [
+                -34.0076,
+                94.0815,
+                -16.3022
+            ],
+            "type": "VEC3"
+        },
+        "accessor_112": {
+            "bufferView": "bufferView_198",
+            "byteOffset": 2870496,
+            "byteStride": 12,
+            "componentType": 5126,
+            "count": 15312,
+            "max": [
+                1,
+                1,
+                1
+            ],
+            "min": [
+                -1,
+                -1,
+                -1
+            ],
+            "type": "VEC3"
+        },
+        "accessor_114": {
+            "bufferView": "bufferView_198",
+            "byteOffset": 3054240,
+            "byteStride": 8,
+            "componentType": 5126,
+            "count": 15312,
+            "max": [
+                35.8951,
+                2.77586
+            ],
+            "min": [
+                -35.7326,
+                -0.59586
+            ],
+            "type": "VEC2"
+        },
+        "accessor_135": {
+            "bufferView": "bufferView_197",
+            "byteOffset": 65136,
+            "byteStride": 0,
+            "componentType": 5123,
+            "count": 51357,
+            "type": "SCALAR"
+        },
+        "accessor_137": {
+            "bufferView": "bufferView_198",
+            "byteOffset": 1042176,
+            "byteStride": 12,
+            "componentType": 5126,
+            "count": 51357,
+            "max": [
+                34.6558,
+                182.366,
+                25.9296
+            ],
+            "min": [
+                -34.6558,
+                93.6681,
+                23.3284
+            ],
+            "type": "VEC3"
+        },
+        "accessor_139": {
+            "bufferView": "bufferView_198",
+            "byteOffset": 1658460,
+            "byteStride": 12,
+            "componentType": 5126,
+            "count": 51357,
+            "max": [
+                1,
+                1,
+                1
+            ],
+            "min": [
+                -1,
+                -0.999994,
+                -1
+            ],
+            "type": "VEC3"
+        },
+        "accessor_141": {
+            "bufferView": "bufferView_198",
+            "byteOffset": 2274744,
+            "byteStride": 8,
+            "componentType": 5126,
+            "count": 51357,
+            "max": [
+                30.4356,
+                38.8086
+            ],
+            "min": [
+                -29.4356,
+                -37.8086
+            ],
+            "type": "VEC2"
+        },
+        "accessor_162": {
+            "bufferView": "bufferView_197",
+            "byteOffset": 0,
+            "byteStride": 0,
+            "componentType": 5123,
+            "count": 2376,
+            "type": "SCALAR"
+        },
+        "accessor_164": {
+            "bufferView": "bufferView_198",
+            "byteOffset": 0,
+            "byteStride": 12,
+            "componentType": 5126,
+            "count": 2376,
+            "max": [
+                33.4704,
+                158.394,
+                -12.879
+            ],
+            "min": [
+                -33.3105,
+                94.4932,
+                -21.3273
+            ],
+            "type": "VEC3"
+        },
+        "accessor_166": {
+            "bufferView": "bufferView_198",
+            "byteOffset": 28512,
+            "byteStride": 12,
+            "componentType": 5126,
+            "count": 2376,
+            "max": [
+                0.879695,
+                0.0520888,
+                0.999995
+            ],
+            "min": [
+                -0.739214,
+                -0.101196,
+                0.475376
+            ],
+            "type": "VEC3"
+        },
+        "accessor_168": {
+            "bufferView": "bufferView_198",
+            "byteOffset": 57024,
+            "byteStride": 8,
+            "componentType": 5126,
+            "count": 2376,
+            "max": [
+                35.5019,
+                32.4506
+            ],
+            "min": [
+                -34.5019,
+                -31.4506
+            ],
+            "type": "VEC2"
+        },
+        "accessor_189": {
+            "bufferView": "bufferView_197",
+            "byteOffset": 4752,
+            "byteStride": 0,
+            "componentType": 5123,
+            "count": 30192,
+            "type": "SCALAR"
+        },
+        "accessor_191": {
+            "bufferView": "bufferView_198",
+            "byteOffset": 76032,
+            "byteStride": 12,
+            "componentType": 5126,
+            "count": 30192,
+            "max": [
+                33.9997,
+                162.18,
+                23.8421
+            ],
+            "min": [
+                -33.5863,
+                96.0497,
+                18.881
+            ],
+            "type": "VEC3"
+        },
+        "accessor_193": {
+            "bufferView": "bufferView_198",
+            "byteOffset": 438336,
+            "byteStride": 12,
+            "componentType": 5126,
+            "count": 30192,
+            "max": [
+                0.999979,
+                0.999815,
+                0.999999
+            ],
+            "min": [
+                -0.999978,
+                -0.999847,
+                -0.99999
+            ],
+            "type": "VEC3"
+        },
+        "accessor_195": {
+            "bufferView": "bufferView_198",
+            "byteOffset": 800640,
+            "byteStride": 8,
+            "componentType": 5126,
+            "count": 30192,
+            "max": [
+                93.8911,
+                58.5095
+            ],
+            "min": [
+                -93.2983,
+                -58.3096
+            ],
+            "type": "VEC2"
+        },
+        "accessor_38": {
+            "bufferView": "bufferView_197",
+            "byteOffset": 167850,
+            "byteStride": 0,
+            "componentType": 5123,
+            "count": 30,
+            "type": "SCALAR"
+        },
+        "accessor_41": {
+            "bufferView": "bufferView_197",
+            "byteOffset": 167910,
+            "byteStride": 0,
+            "componentType": 5123,
+            "count": 6,
+            "type": "SCALAR"
+        },
+        "accessor_43": {
+            "bufferView": "bufferView_198",
+            "byteOffset": 2685600,
+            "byteStride": 12,
+            "componentType": 5126,
+            "count": 36,
+            "max": [
+                33.4576,
+                94.1681,
+                24.0704
+            ],
+            "min": [
+                -33.7333,
+                93.6681,
+                -25.2225
+            ],
+            "type": "VEC3"
+        },
+        "accessor_45": {
+            "bufferView": "bufferView_198",
+            "byteOffset": 2686032,
+            "byteStride": 12,
+            "componentType": 5126,
+            "count": 36,
+            "max": [
+                1,
+                1,
+                1
+            ],
+            "min": [
+                -1,
+                -1,
+                -1
+            ],
+            "type": "VEC3"
+        },
+        "accessor_47": {
+            "bufferView": "bufferView_198",
+            "byteOffset": 2686464,
+            "byteStride": 8,
+            "componentType": 5126,
+            "count": 36,
+            "max": [
+                34.0954,
+                25.1464
+            ],
+            "min": [
+                -33.0954,
+                -24.1464
+            ],
+            "type": "VEC2"
+        }
+    },
+    "animations": {},
+    "asset": {
+        "generator": "collada2gltf@cf6371beb0bdc18ba603378d5e40c966da53d385",
+        "premultipliedAlpha": true,
+        "profile": {
+            "api": "WebGL",
+            "version": "1.0.2"
+        },
+        "version": "1.0"
+    },
+    "bufferViews": {
+        "bufferView_197": {
+            "buffer": "puppet-master",
+            "byteLength": 198548,
+            "byteOffset": 0,
+            "target": 34963
+        },
+        "bufferView_198": {
+            "buffer": "puppet-master",
+            "byteLength": 3176736,
+            "byteOffset": 198548,
+            "target": 34962
+        }
+    },
+    "buffers": {
+        "puppet-master": {
+            "byteLength": 3375284,
+            "type": "arraybuffer",
+            "uri": "puppet-master.bin"
+        }
+    },
+    "cameras": {
+        "Camera-camera": {
+            "name": "Camera",
+            "perspective": {
+                "aspect_ratio": 1.77778,
+                "yfov": 0.482375,
+                "zfar": 100,
+                "znear": 0.1
+            },
+            "type": "perspective"
+        }
+    },
+    "extensions": {
+        "KHR_materials_common": {
+            "lights": {
+                "Lamp-light": {
+                    "name": "Lamp",
+                    "point": {
+                        "color": [
+                            1,
+                            1,
+                            1
+                        ],
+                        "constantAttenuation": 1,
+                        "linearAttenuation": 0,
+                        "quadraticAttenuation": 0.00111109
+                    },
+                    "type": "point"
+                }
+            }
+        }
+    },
+    "extensionsUsed": [
+        "KHR_materials_common"
+    ],
+    "materials": {
+        "Base-effect": {
+            "extensions": {
+                "KHR_materials_common": {
+                    "doubleSided": false,
+                    "jointCount": 0,
+                    "technique": "PHONG",
+                    "transparent": false,
+                    "values": {
+                        "ambient": [
+                            0,
+                            0,
+                            0,
+                            1
+                        ],
+                        "diffuse": [
+                            0.396078,
+                            0.396078,
+                            0.396078,
+                            1
+                        ],
+                        "emission": [
+                            0,
+                            0,
+                            0,
+                            1
+                        ],
+                        "shininess": 39,
+                        "specular": [
+                            0,
+                            0,
+                            0,
+                            1
+                        ]
+                    }
+                }
+            },
+            "name": "Base"
+        },
+        "Frame-effect": {
+            "extensions": {
+                "KHR_materials_common": {
+                    "doubleSided": false,
+                    "jointCount": 0,
+                    "technique": "PHONG",
+                    "transparent": false,
+                    "values": {
+                        "ambient": [
+                            0,
+                            0,
+                            0,
+                            1
+                        ],
+                        "diffuse": [
+                            0.337255,
+                            0.133333,
+                            0.0509804,
+                            1
+                        ],
+                        "emission": [
+                            0,
+                            0,
+                            0,
+                            1
+                        ],
+                        "shininess": 35,
+                        "specular": [
+                            0.286275,
+                            0.145098,
+                            0.0196078,
+                            1
+                        ]
+                    }
+                }
+            },
+            "name": "Frame"
+        },
+        "Light-effect": {
+            "extensions": {
+                "KHR_materials_common": {
+                    "doubleSided": false,
+                    "jointCount": 0,
+                    "technique": "PHONG",
+                    "transparent": false,
+                    "values": {
+                        "ambient": [
+                            0,
+                            0,
+                            0,
+                            1
+                        ],
+                        "diffuse": [
+                            0,
+                            0,
+                            0,
+                            1
+                        ],
+                        "emission": [
+                            0,
+                            0,
+                            0,
+                            1
+                        ],
+                        "shininess": 50,
+                        "specular": [
+                            0,
+                            0,
+                            0,
+                            1
+                        ]
+                    }
+                }
+            },
+            "name": "Light"
+        },
+        "LightBody-effect": {
+            "extensions": {
+                "KHR_materials_common": {
+                    "doubleSided": false,
+                    "jointCount": 0,
+                    "technique": "PHONG",
+                    "transparent": false,
+                    "values": {
+                        "ambient": [
+                            0,
+                            0,
+                            0,
+                            1
+                        ],
+                        "diffuse": [
+                            0.0666667,
+                            0.0705882,
+                            0.0941176,
+                            1
+                        ],
+                        "emission": [
+                            0,
+                            0,
+                            0,
+                            1
+                        ],
+                        "shininess": 36,
+                        "specular": [
+                            0.203922,
+                            0.203922,
+                            0.203922,
+                            1
+                        ]
+                    }
+                }
+            },
+            "name": "LightBody"
+        },
+        "Puppet_Cloth-effect": {
+            "extensions": {
+                "KHR_materials_common": {
+                    "doubleSided": false,
+                    "jointCount": 0,
+                    "technique": "PHONG",
+                    "transparent": false,
+                    "values": {
+                        "ambient": [
+                            0,
+                            0,
+                            0,
+                            1
+                        ],
+                        "diffuse": [
+                            0.0509804,
+                            0.0509804,
+                            0.0509804,
+                            1
+                        ],
+                        "emission": [
+                            0,
+                            0,
+                            0,
+                            1
+                        ],
+                        "shininess": 40,
+                        "specular": [
+                            0.25098,
+                            0.25098,
+                            0.25098,
+                            1
+                        ]
+                    }
+                }
+            },
+            "name": "Puppet_Cloth"
+        },
+        "Puppet_Cloth2-effect": {
+            "extensions": {
+                "KHR_materials_common": {
+                    "doubleSided": false,
+                    "jointCount": 0,
+                    "technique": "PHONG",
+                    "transparent": false,
+                    "values": {
+                        "ambient": [
+                            0,
+                            0,
+                            0,
+                            1
+                        ],
+                        "diffuse": [
+                            0.309804,
+                            0.0509804,
+                            0.0509804,
+                            1
+                        ],
+                        "emission": [
+                            0,
+                            0,
+                            0,
+                            1
+                        ],
+                        "shininess": 40,
+                        "specular": [
+                            0.321569,
+                            0.321569,
+                            0.321569,
+                            1
+                        ]
+                    }
+                }
+            },
+            "name": "Puppet_Cloth2"
+        }
+    },
+    "meshes": {
+        "OldPuppet1_1-mesh": {
+            "name": "OldPuppet1_1",
+            "primitives": [
+                {
+                    "attributes": {
+                        "NORMAL": "accessor_166",
+                        "POSITION": "accessor_164",
+                        "TEXCOORD_0": "accessor_168"
+                    },
+                    "indices": "accessor_162",
+                    "material": "Puppet_Cloth-effect",
+                    "mode": 4
+                }
+            ]
+        },
+        "OldPuppet4_4-mesh": {
+            "name": "OldPuppet4_4",
+            "primitives": [
+                {
+                    "attributes": {
+                        "NORMAL": "accessor_193",
+                        "POSITION": "accessor_191",
+                        "TEXCOORD_0": "accessor_195"
+                    },
+                    "indices": "accessor_189",
+                    "material": "Puppet_Cloth2-effect",
+                    "mode": 4
+                }
+            ]
+        },
+        "OldPuppet5_5-mesh": {
+            "name": "OldPuppet5_5",
+            "primitives": [
+                {
+                    "attributes": {
+                        "NORMAL": "accessor_139",
+                        "POSITION": "accessor_137",
+                        "TEXCOORD_0": "accessor_141"
+                    },
+                    "indices": "accessor_135",
+                    "material": "Frame-effect",
+                    "mode": 4
+                }
+            ]
+        },
+        "OldPuppet7_7-mesh": {
+            "name": "OldPuppet7_7",
+            "primitives": [
+                {
+                    "attributes": {
+                        "NORMAL": "accessor_45",
+                        "POSITION": "accessor_43",
+                        "TEXCOORD_0": "accessor_47"
+                    },
+                    "indices": "accessor_38",
+                    "material": "Base-effect",
+                    "mode": 4
+                },
+                {
+                    "attributes": {
+                        "NORMAL": "accessor_45",
+                        "POSITION": "accessor_43",
+                        "TEXCOORD_0": "accessor_47"
+                    },
+                    "indices": "accessor_41",
+                    "material": "Frame-effect",
+                    "mode": 4
+                }
+            ]
+        },
+        "OldPuppet8_8-mesh": {
+            "name": "OldPuppet8_8",
+            "primitives": [
+                {
+                    "attributes": {
+                        "NORMAL": "accessor_112",
+                        "POSITION": "accessor_110",
+                        "TEXCOORD_0": "accessor_114"
+                    },
+                    "indices": "accessor_102",
+                    "material": "LightBody-effect",
+                    "mode": 4
+                },
+                {
+                    "attributes": {
+                        "NORMAL": "accessor_112",
+                        "POSITION": "accessor_110",
+                        "TEXCOORD_0": "accessor_114"
+                    },
+                    "indices": "accessor_105",
+                    "material": "Puppet_Cloth-effect",
+                    "mode": 4
+                },
+                {
+                    "attributes": {
+                        "NORMAL": "accessor_112",
+                        "POSITION": "accessor_110",
+                        "TEXCOORD_0": "accessor_114"
+                    },
+                    "indices": "accessor_108",
+                    "material": "Light-effect",
+                    "mode": 4
+                }
+            ]
+        }
+    },
+    "nodes": {
+        "Camera": {
+            "camera": "Camera-camera",
+            "children": [],
+            "matrix": [
+                0.685921,
+                0.727676,
+                0,
+                0,
+                -0.324014,
+                0.305421,
+                0.895396,
+                0,
+                0.651558,
+                -0.61417,
+                0.445271,
+                0,
+                7.48113,
+                -6.50764,
+                5.34367,
+                1
+            ],
+            "name": "Camera"
+        },
+        "Lamp": {
+            "children": [],
+            "extensions": {
+                "KHR_materials_common": {
+                    "light": "Lamp-light"
+                }
+            },
+            "matrix": [
+                -0.290865,
+                0.955171,
+                -0.0551891,
+                0,
+                -0.771101,
+                -0.199883,
+                0.604525,
+                0,
+                0.566393,
+                0.218391,
+                0.794672,
+                0,
+                4.07624,
+                1.00545,
+                5.90386,
+                1
+            ],
+            "name": "Lamp"
+        },
+        "OldPuppet1_1": {
+            "children": [],
+            "matrix": [
+                0.1,
+                0,
+                0,
+                0,
+                0,
+                -1.62921e-008,
+                0.1,
+                0,
+                0,
+                -0.1,
+                -1.62921e-008,
+                0,
+                0.0247512,
+                -0.347046,
+                -9.33064,
+                1
+            ],
+            "meshes": [
+                "OldPuppet1_1-mesh"
+            ],
+            "name": "OldPuppet1_1"
+        },
+        "OldPuppet4_4": {
+            "children": [],
+            "matrix": [
+                0.1,
+                0,
+                0,
+                0,
+                0,
+                -1.62921e-008,
+                0.1,
+                0,
+                0,
+                -0.1,
+                -1.62921e-008,
+                0,
+                0.0247512,
+                -0.347046,
+                -9.33064,
+                1
+            ],
+            "meshes": [
+                "OldPuppet4_4-mesh"
+            ],
+            "name": "OldPuppet4_4"
+        },
+        "OldPuppet5_5": {
+            "children": [],
+            "matrix": [
+                0.1,
+                0,
+                0,
+                0,
+                0,
+                -1.62921e-008,
+                0.1,
+                0,
+                0,
+                -0.1,
+                -1.62921e-008,
+                0,
+                0.0247512,
+                -0.347046,
+                -9.33064,
+                1
+            ],
+            "meshes": [
+                "OldPuppet5_5-mesh"
+            ],
+            "name": "OldPuppet5_5"
+        },
+        "OldPuppet7_7": {
+            "children": [],
+            "matrix": [
+                0.1,
+                0,
+                0,
+                0,
+                0,
+                -1.62921e-008,
+                0.1,
+                0,
+                0,
+                -0.1,
+                -1.62921e-008,
+                0,
+                0.0247512,
+                -0.347046,
+                -9.33064,
+                1
+            ],
+            "meshes": [
+                "OldPuppet7_7-mesh"
+            ],
+            "name": "OldPuppet7_7"
+        },
+        "OldPuppet8_8": {
+            "children": [],
+            "matrix": [
+                0.1,
+                0,
+                0,
+                0,
+                0,
+                -1.62921e-008,
+                0.1,
+                0,
+                0,
+                -0.1,
+                -1.62921e-008,
+                0,
+                0.0247512,
+                -0.347046,
+                -9.33064,
+                1
+            ],
+            "meshes": [
+                "OldPuppet8_8-mesh"
+            ],
+            "name": "OldPuppet8_8"
+        },
+        "node_7": {
+            "children": [
+                "Camera",
+                "Lamp",
+                "OldPuppet7_7",
+                "OldPuppet8_8",
+                "OldPuppet5_5",
+                "OldPuppet1_1",
+                "OldPuppet4_4"
+            ],
+            "matrix": [
+                1,
+                0,
+                0,
+                0,
+                0,
+                0,
+                -1,
+                0,
+                0,
+                1,
+                0,
+                0,
+                0,
+                0,
+                0,
+                1
+            ],
+            "name": "Y_UP_Transform"
+        }
+    },
+    "scene": "defaultScene",
+    "scenes": {
+        "defaultScene": {
+            "nodes": [
+                "node_7"
+            ]
+        }
+    },
+    "skins": {}
+}
