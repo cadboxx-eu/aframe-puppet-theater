@@ -5,50 +5,58 @@
     <title>aframe-puppet-theater</title>
     <meta name="description" content="aframe-puppet-theater">
     <script src="https://rawgit.com/aframevr/aframe/master/dist/aframe-master.js"></script>
-    <script src="https://cdn.rawgit.com/donmccurdy/aframe-extras/v3.2.6/dist/aframe-extras.js"></script>
-    <script src="puppet-controls.js"></script>
-    <script src="https://rawgit.com/kfarr/aframe-select-bar-component/master/dist/aframe-select-bar-component.js"></script>
-    <script src="https://rawgit.com/dmarcos/aframe-motion-capture/master/dist/aframe-motion-capture.js"></script>
-    <link rel="stylesheet" href="YWjWzo.css" />
-
   </head>
   <body>
-    <!-- <a-scene avatar-recorder> -->
-    <a-scene id="myscene" remove-spinner avatar-recorder="spectatorPlay: true; spectatorPosition: 0 0 0">
+    <a-scene id="myscene" avatar-recorder="spectatorPlay: true; spectatorPosition: 0 0 0">
       <a-assets>
-        <a-asset-item id="theaterPly" src="assets/puppet2.bake.ply"></a-asset-item>
-        <img id="skyTexture" src="https://cdn.aframe.io/a-painter/images/sky.jpg">
+        <!-- <img id="skyTexture" src="https://cdn.aframe.io/a-painter/images/sky.jpg"> -->
         <a-asset-item id="hamiltonObj" src="assets/obj/hamilton-base.obj"></a-asset-item>
         <a-asset-item id="hamiltonMtl" src="assets/obj/hamilton-base.mtl"></a-asset-item>
         <a-asset-item id="hamiltonHeadObj" src="assets/obj/hamilton-head-cropped.obj"></a-asset-item>
         <a-asset-item id="hamiltonHeadMtl" src="assets/obj/hamilton-head-cropped.mtl"></a-asset-item>
-      </a-assets>
 
-      <!-- Primitives. -->
-      <a-entity id="theater" ply-model="src: #theaterPly" scale="0.01 0.01 0.01" position="0 0 -1.25" rotation="-90 90 90" ></a-entity>
-      <!-- <a-entity id="theater" ply-model="src: url(assets/puppet2.bake.ply)" scale="0.01 0.01 0.01" position="0 0 -1.25" rotation="-90 90 90" ></a-entity> -->
+        <!-- <a-asset-item id="puppet-master" src="assets/puppet-master.gltf"></a-asset-item> -->
+        <a-asset-item id="puppetFloorAsset" src="assets/puppet-floor.gltf"></a-asset-item>
+        <a-asset-item id="puppetFrameAsset" src="assets/puppet-frame.gltf"></a-asset-item>
+        <a-asset-item id="puppetCurtainsAsset" src="assets/puppet-curtains.gltf"></a-asset-item>
+        <a-asset-item id="puppetBackdropAsset" src="assets/puppet-backdrop.gltf"></a-asset-item>
+        <a-asset-item id="puppetLightsAsset" src="assets/puppet-lights.gltf"></a-asset-item>
+
+      </a-assets>
+      <!-- <a-entity id="puppetTheater" gltf-model="#puppet-master" shadow></a-entity> -->
+      <a-entity id="puppetFloor" gltf-model="#puppetFloorAsset" shadow></a-entity>
+      <a-entity id="puppetFrame" gltf-model="#puppetFrameAsset" shadow></a-entity>
+      <a-entity id="puppetCurtains" gltf-model="#puppetCurtainsAsset" position="0 0 5" rotation="0 -180 0"></a-entity>
+      <a-entity id="puppetCurtainsBackFacing" gltf-model="#puppetCurtainsAsset" shadow></a-entity>
+      <a-entity id="puppetBackdrop" gltf-model="#puppetBackdropAsset" shadow></a-entity>
+      <a-entity id="puppetLights" gltf-model="#puppetLightsAsset" shadow></a-entity>
 
       <a-entity id="cameraWrapper" position="0 0 0" >
         <a-entity id="camera" camera look-controls wasd-controls="fly: true"></a-entity>
       </a-entity>
 
+      <a-entity light="type:directional; intensity:0.85; castShadow:true; shadowCameraTop:10;" position="-0.5 2.5 9"></a-entity>
+
+      <a-entity light="type:directional; intensity:1;" position="725 5 -4000"></a-entity>
+
       <!-- Background sky. -->
+      <!-- <a-sky id="sky" height="2048" radius="30" src="#skyTexture" theta-length="90" width="2048"></a-sky> -->
       <a-sky id="blackSky" height="2048" radius="20" theta-length="90" width="2048" color="black"></a-sky>
-      <a-sky id="sky" height="2048" radius="30" src="#skyTexture" theta-length="90" width="2048"></a-sky>
 
       <!-- Ground. -->
-      <a-circle material="color: black" rotation="-90 0 0" radius="32"></a-circle>
+      <a-circle id="ground" shadow="cast: false" material="color: gray" rotation="-90 0 0" radius="32" position="0 -0.5 0"></a-circle>
 
       <!--Tracked controls. -->
       <a-entity id="left" hand-controls="left"></a-entity>
       <a-entity id="right" hand-controls="right">
 
         <!-- <a-entity id="rightItem" file="chr_suit1" objectGroup="mmmm_chr" objectId="0" obj-model="obj: url(assets/obj/chr_suit1.obj); mtl: url(assets/obj/chr_suit1.mtl)" rotation="-56.8 0 0" scale="0.01 0.01 0.01" position="0 -0.08 -0.09"></a-entity> -->
-        <a-entity id="rightItem" file="hamilton-base" objectGroup="sunlessfiend_hamilton" objectId="0" obj-model="obj: #hamiltonObj; mtl: #hamiltonMtl" rotation="-56.8 0 0" scale="0.002 0.002 0.002" position="0 -0.08 -0.09">
-          <a-entity id="head" file="hamilton-head-cropped" mouth="controllerID: right" objectGroup="sunlessfiend_hamilton" objectId="0" obj-model="obj: #hamiltonHeadObj; mtl: #hamiltonHeadMtl" rotation="0 0 0" position="0 61 5"></a-entity>
+        <a-entity id="rightItem" shadow="receive: false" file="hamilton-base" objectGroup="sunlessfiend_hamilton" objectId="0" obj-model="obj: #hamiltonObj; mtl: #hamiltonMtl" rotation="-56.8 0 0" scale="0.002 0.002 0.002" position="0 -0.08 -0.09">
+          <a-entity id="head" shadow="receive: false" file="hamilton-head-cropped" mouth="controllerID: right" objectGroup="sunlessfiend_hamilton" objectId="0" obj-model="obj: #hamiltonHeadObj; mtl: #hamiltonHeadMtl" rotation="0 0 0" position="0 61 5"></a-entity>
         </a-entity>
 
       </a-entity>
+    </a-scene>
 
       <script type="text/javascript">
       AFRAME.registerComponent('mouth', {
@@ -70,55 +78,7 @@
           console.log(value);
         },
       });
-
-        var enteredVR = false;
-
-        document.querySelector('a-scene').addEventListener('enter-vr', function () {
-           console.log("ENTERED VR");
-           console.log(enteredVR);
-           if (!enteredVR) {
-             document.getElementById('cameraWrapper').setAttribute("position", "0 0 0");
-            //  document.getElementById('cameraWrapper').setAttribute("position", "0 0 -3");
-            //  document.getElementById('cameraWrapper').setAttribute("rotation", "0 0 0");
-             enteredVR = true;
-           };
-        }); // works the first time, but then makes things wonky the 2nd time
-
-        document.querySelector('a-scene').addEventListener('exit-vr', function () {
-           console.log("EXIT VR");
-          //  document.getElementById('cameraWrapper').setAttribute("position", "-1.06 1.31 1.82"); // position="-1.06 1.31 1.82"
-          //  document.getElementById('cameraWrapper').setAttribute("rotation", "-12.834254610930437 -16.844959176846217 0");
-        }); // works the first time
-      </script>
-
-    </a-scene>
-    <script type="text/javascript">
-    document.getElementById('myscene').addEventListener('loaded', function () {
-      setTimeout(function () {
-        console.log("loaded fired");
-        document.getElementById('loader').style.display = 'none';
-        document.getElementById("blackSky").setAttribute("visible", "false");
-      }, 500);
-    })
     </script>
-
-<div id="loader" credit="codepen/YWjWzo">
-  <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
-    <defs>
-      <filter id="gooey">
-        <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur"></feGaussianBlur>
-        <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7" result="goo"></feColorMatrix>
-        <feBlend in="SourceGraphic" in2="goo"></feBlend>
-      </filter>
-    </defs>
-  </svg>
-  <div class="blob blob-0"></div>
-  <div class="blob blob-1"></div>
-  <div class="blob blob-2"></div>
-  <div class="blob blob-3"></div>
-  <div class="blob blob-4"></div>
-  <div class="blob blob-5"></div>
-</div>
 
 <!-- GitHub Corner. -->
 <a href="https://github.com/kfarr/aframe-puppet-theater" class="github-corner">
